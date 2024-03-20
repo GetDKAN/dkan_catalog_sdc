@@ -1,0 +1,8 @@
+name: 'DKAN Catalog SDC (Experimental)'
+type: module
+description: 'Provides catalog components to display DKAN data.'
+package: DKAN
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:sdc
+

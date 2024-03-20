@@ -1,0 +1,19 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Data Preview
+status: stable
+description: Preview data in table.
+libraryDependencies:
+  - core/once
+props:
+  type: object
+  properties:
+    dataset_id:
+      type: string
+      title: The ID for the dataset.
+      examples:
+        - https://example.org
+    distribution_index:
+      type: number
+      title: The index for the distribution in the distribution array.
+      examples:
+        - 1

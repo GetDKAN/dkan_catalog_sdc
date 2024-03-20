@@ -1,0 +1,12 @@
+<div {{ attributes.addClass('dkan-sdc-data-preview').setAttribute('distribution_index', distribution_index).setAttribute('dataset_id', dataset_id) }} >
+  <div class="dkan-sdc-data-preview-table-header">
+    <span
+      id="{{dataset_id}}-{{distribution_index}}-results" 
+      class="dkan-sdc-data-preview-results">
+    </span>
+  </div>
+  <table 
+    id="{{dataset_id}}-{{distribution_index}}" 
+    class="dkan-sdc-data-preview-table dkan-sdc-data-preview-resizable-columns">
+  </table>
+</div>

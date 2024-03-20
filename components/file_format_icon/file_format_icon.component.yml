@@ -1,0 +1,14 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: File Format Icon
+status: stable
+description: An icon for filer formats.
+props:
+  type: object
+  properties:
+    mediaType:
+      type: string
+      title: Media Type
+      examples:
+        - text/csv
+        - text/pdf
+        - text/xlsx

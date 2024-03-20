@@ -1,0 +1,10 @@
+{% set format = mediaType|split("/") %}
+{% set supported_icons = [ "csv", "pdf", "zip" ] %}
+
+<span {{ attributes.addClass('dkan-sdc-format-icon') }}>
+  {% if format|length > 0 and format[1] in supported_icons %}
+    {{ source(componentMetadata.path ~ '/svgs/' ~ format[1] ~ '.svg') }}
+  {% else %}
+    {{ source(componentMetadata.path ~ '/svgs/data.svg') }}
+  {% endif %}
+</span>

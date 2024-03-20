@@ -1,0 +1,16 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Metadata Table
+status: stable
+description: A table that presents metadata fields and their values.
+props:
+  type: object
+  properties:
+    table_rows:
+      type: object
+      title: Table Rows
+      description: TBD
+    metadata:
+      type: object
+      title: Metadata
+      description: TBD
+      

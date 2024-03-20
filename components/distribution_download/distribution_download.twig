@@ -1,0 +1,18 @@
+<a {{ attributes.addClass('dkan-sdc-distribution-download') }} href="{{downloadURL}}">
+  {{ include('dkan_catalog_sdc:file_format_icon', {
+    mediaType: mediaType
+  }, with_context = false) }}
+  {% if title != "" %}
+    <span>
+      {{ title }}
+      {% if format != "" %}
+        ({{render_var(format)|upper}})
+      {% endif %}
+    </span>
+  {% else %}
+    {% set filename = render_var(downloadURL)|split('/') %}
+    <span>
+      {{filename|last}}
+    </span>
+  {% endif %}
+</a>

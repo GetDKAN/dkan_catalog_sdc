@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px 15px;
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+}
+
+.dkan-sdc-resize-handle {
+  top: 0;
+  right: 0;
+  width: 5px;
+  position: absolute;
+  cursor: col-resize;
+  user-select: none;
+  height: 100%;
+}
+
+.dkan-sdc-resize-handle--hovered {
+  border-right: 2px solid #0000ff;
+}

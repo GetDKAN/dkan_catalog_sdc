@@ -1,0 +1,16 @@
+<table {{ attributes.addClass('dkan-sdc-metadata-table') }}>
+  <tbody role="rowgroup">
+    {% for key, value in table_rows %}
+      {% if value is not null and value is not empty %}
+        <tr role="row">
+          <th class="" role="rowheader">
+            {{ key }}
+          </th>
+          <td class="" role="cell" data-title="{{key}}">
+            {{ value }}
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>

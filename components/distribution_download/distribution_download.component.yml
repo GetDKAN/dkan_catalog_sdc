@@ -1,0 +1,33 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Distribution Download
+status: stable
+description: An icon and download link for DKAN distribution.
+libraryDependencies:
+  - core/once
+props:
+  type: object
+  properties:
+    downloadURL:
+      type: string
+      title: Download URL
+      examples:
+        - https://example.org
+    title:
+      type: string
+      title: Text
+      examples:
+        - My Data File
+    mediaType:
+      type: string
+      title: Media Type
+      examples:
+        - text/csv
+        - text/pdf
+        - text/xlsx
+    format:
+      type: string
+      title: File Format
+      examples:
+        - csv
+        - xlsx
+        - pdf
